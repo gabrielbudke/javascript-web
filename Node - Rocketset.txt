@@ -1,0 +1,18 @@
+O que é API e NodeJS?
+
+> NodeJS é uma plataforma que utiliza a 
+  V8(engine do JS) no lado do back-end.
+
+> API Rest - Existem dois tipos de aplicações 
+  muita utilizadas recentemente:
+	> Full MVC - criar a parte visual junto com 
+	  o back-end. Servidor e front-end estão unidos.
+
+	> API Rest - separa o front-end do back-end. 
+	  O back-end que serve para manipular as 
+	  informações do BD, receber requisições e 
+	  enviar respostas e tem o front-end separado 
+	  que muita das vezes é construido com frameworks 
+	  muito conhecidas.
+
+Beneficios: Mais flexibilidade, trabalhar com uma unica API para diferentes plataformas(WEB, MOBILE, ETC).

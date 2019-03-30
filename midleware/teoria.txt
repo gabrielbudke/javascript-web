@@ -1,0 +1,4 @@
+> Padrão Midleware
+    Chain of responsibility:
+     - Separar um processo em pequenos passos.
+     - não existe um acoplamento do próximo passo.

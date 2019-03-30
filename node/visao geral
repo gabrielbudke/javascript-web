@@ -1,0 +1,21 @@
+Node:
+    Ambiente de execução para JavaScript do lado do 
+    servidor (server-side), assíncrono 
+    e orientado a eventos de código aberto.
+    
+    Uma aplicação back-end do Node é organizada em pastas
+    e arquivos e cada arquivo representa um módulo.
+
+    Um módulo tem um certa interioridade. Ele NÃO deixa 
+    aquilo que foi escrito dentro dele, disponível 
+    para todo mundo.
+
+    npm: Gerenciador de pacotes do Node - reponsável 
+    por baixar bibliotecas de terceiro.
+
+    nodemon: Executando com o 'nodemom', cada vez que 
+    o código é alterado ele dá um refresh e continua 
+    executando o arquivo.
+
+
+    

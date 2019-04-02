@@ -14,7 +14,7 @@
 function falarDepoisDe(segundos, frase) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            reject(frase)
+            resolve(frase)
         }, segundos * 1000)
     })
 }

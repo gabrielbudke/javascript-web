@@ -1,0 +1,55 @@
+ - Internet é uma grande rede de computadores.
+
+Topologias:
+> Centralizadas: vários computadores ligados a um nó
+    central (computadores conectados ao switch)
+
+> Distribuidas: topologia adotada pela Internet. 
+    Não há um poder central
+
+---------------------------------------------------------------------
+Web(Teia)
+> Se tem vários niveis de redes. (nível 1, nível 2, nível 3)
+
+-----------------------------------------------------------------------------------
+Protocolo TCP/IP
+> TCP: Transmission Control Protocol - protocolo na camada de transporte. 
+        É orientado a conexão e é confiável em contra partida tem se o 
+        UDP - User Datagram Protocol que é um protocola não orientado a 
+        conexão e é baseado no melhor esforço.
+
+
+> IP: Internet Protocol - protocolo responsável por fazer essa comunicação entre 
+        redes. Dai que vem o endereço IP;
+
+    O protocolo TCP/IP é baseado em um padrão de projeto chamado layers.
+    O protocolo sendo algo complexo é separando em camadas, tendo cada camada
+    sua responsabilidade:
+        
+        > Aplicação: HTTP, FTP, SMTP, Comunicação Processo-A-Processo, número da porta  
+        
+        > Transporte: TCP (confiável), UDP(melhor esforço), Comunicação Host-A-Host, Confiabilidade, integridade
+        
+        > Internet: IP, Conexão entre redes, transf. de pacotes
+        
+        > Rede/Física: Ethernet, Wi-Fi, MAC address, Hardware, Software
+
+    A comunicação/dependencia das camadas é: a camada de cima usa a camada de baixo.
+    Não há depêndencia cíclica. Sendo assim as camadas de baixo não dependem das camadas de cima.
+    Cada camada tem sua responsabilidade.
+
+-------------------------------------------------------------------------------------------------------------------------------    
+Anatomia do IPv4
+
+   |----------------------------| 
+   | Classe A: 192.168.100.230  |
+   |----------------------------|
+
+ > Um numero separado por quatro partes.
+ > Cada parte vai de 0 a 255.
+ > Parte deste IP está destinado para identificar a rede que o computador está. 
+ > Outra parte é para identificar o computador dentro de uma rede.
+
+-----------------------------------------------------------------------------------------
+Conceito de porta - porta representa processos.
+

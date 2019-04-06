@@ -10,7 +10,7 @@ HTTP: Hyper Text Transfer Protocol
           envia uma requisição HTTP para um servidor, pro servidor e 
           pra máquina é como se estivessem se comunicando pela primeira vez.
           
-          Dentro do protocolo em si nao existe o estado da conversaçao,
+          Dentro do protocolo em si não existe o estado da conversaçao,
           não se sabe se está fazendo a primeira requisição ou a centésima.
 
         > Cliente-Servidor (client-server): um cliente que manda uma requisição

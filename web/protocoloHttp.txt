@@ -25,4 +25,12 @@ HTTP: Hyper Text Transfer Protocol
         > Browser gera a requisição
         > Servidor web gera a resposta
         > Browser exibe a página
+
+    
+    Grupos de Status HTTP:
+        > 1xx - Informação
+        > 2xx - Sucesso
+        > 3xx - Redirecionamento
+        > 4xx - Erro no cliente
+        > 5xx - Erro no servidor
         

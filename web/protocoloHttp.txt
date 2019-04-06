@@ -1,0 +1,28 @@
+HTTP: Hyper Text Transfer Protocol
+    > Nada mais é do que um texto que está linkado.
+    > Documento escritos em HTML, e tem os textos linkados.
+
+    Caracteristicas:
+        > Se for colocar ele na pilha TCP/IP ele faz parte da 
+          camada de aplicação.
+        
+        > É um protocolo Stateless: significa que quando uma maquina 
+          envia uma requisição HTTP para um servidor, pro servidor e 
+          pra máquina é como se estivessem se comunicando pela primeira vez.
+          
+          Dentro do protocolo em si nao existe o estado da conversaçao,
+          não se sabe se está fazendo a primeira requisição ou a centésima.
+
+        > Cliente-Servidor (client-server): um cliente que manda uma requisição
+        via URL e o servidor envia uma resposta para o cliente.
+
+        > Opera em cima da stack TCP/IP
+
+        > Retorna conteúdos para formar uma página web.
+
+    Fluxo: 
+        > Usuário informa URL
+        > Browser gera a requisição
+        > Servidor web gera a resposta
+        > Browser exibe a página
+        

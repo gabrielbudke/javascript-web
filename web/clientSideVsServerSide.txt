@@ -1,0 +1,32 @@
+Evolução das Arquiteturas:
+
+    > Mainframe: tudo era centralizado no mainframe.
+        Tinha se terminais burros acessando aplicação 
+        construída no mainframe.
+
+    > Client-Server: época de ouro do Delphi.
+        
+        Tinha aplicações em 2 camadas:
+        > um cliente rico desktop com regras de negócios e as vezes acesso o BD. 
+        
+        Tinha aplicações em 3 camadas:
+        > um cliente rico desktop com regras de negócios, um middlware e as vezes acesso ao BD. 
+
+    > Web - Server Side:
+        Toda aplicação, lógica, rederização da página 
+        é processada do lado do servidor. 
+    
+    > Front-end + services
+        Aplicação rica e o acesso ao servidor é mais para obter dados.
+
+
+RESUMO: Em aplicações server-side o conteúdo HTML é gerado partir do 
+        servidor, ou seja, não apenas os dados é enviados do servidor
+        pro browser, mas o próprio HTML é gerado do lado do servidor 
+        e manda essa informação para ser renderizada no browser.
+
+        Quando se trabalha com front-end/client-side é comun ter o conceito 
+        de SPA (Single Page Application).
+
+
+

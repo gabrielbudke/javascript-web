@@ -1,0 +1,21 @@
+Virtual Hosting:
+    >  É comun dentro de um servidor web, ter vários 
+       sites sendo atendidos.
+    >  Um único servidor web atendendo multíplas requisições.
+
+Estrutura de Pastas/Arquivos estáticos:
+    > É comun dentro de um servidor web,colocar as pastas 
+      com imagens, css, js,  páginas estáticas, etc.
+    
+    > Na prática, quando se vai aplicar o sistema em produção, 
+      é comun jogar todos os seus arquivos estáticos (img, css,js)
+      em outro servidor especializado em entregar arquivos estáticos.
+
+Web Stack:
+    > Sistema Operacional + Web Server + DB + Linguagem
+
+    > Stack mais famosa: 
+        Linux + Apache + MySQL + PHP
+
+    
+    

@@ -1,0 +1,9 @@
+Do ponto de vista Server-Side:
+
+    > Conteúdo Estático: quando o servidor para renderizar 
+      uma página, ele lê os arquivos do disco e serve a 
+      página para ser renderizada apenas com conteúdo 
+      de arquvios.
+    
+    > Conteúdo Dinâmico: conteúdo gerado apartir de um código.
+    

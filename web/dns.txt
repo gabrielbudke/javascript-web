@@ -1,0 +1,7 @@
+Servidor DNS:
+    Traduz os nomes de domínios em endereços IP.
+
+    Exemplo:
+        www.site.com.br -> 14.59.64.57
+
+    

@@ -4,4 +4,54 @@ Servidor DNS:
     Exemplo:
         www.site.com.br -> 14.59.64.57
 
-    
+    DNS funciona sobre o protocolo UDP na porta 53.
+
+    Funcionamento Básico do DNS:
+        1. Usuário informa o endereço no browser
+        2. Computador envia uma consulta DNS para o servidor local
+        3. O servidor responde com o endereço IP
+        4. Computador acessa o servidor a partir do IP obtido
+
+    Existem dois tipos de busca que o DNS faz:
+       
+        1. Busca recursiva
+
+                    
+       |============|  www.site.com.br   |==============|
+       | DNS Client | -----------------> | DNS Server 1 |
+       |============|                    |  11.11.12.1  |
+                                         |==============|
+
+            *Todo Client precisa ter um DNS que é referênciado.
+
+        > A máquina Client não tem resolvido o IP para o qual ela vai fazer
+            a requisição.
+        
+        > O DNS Server 1 percebe  que não tem essa resolução, ele não sabe
+            quem é o domínio 'www.site.com.br'
+
+        > De forma recursiva, ele passa para outros servidores DNS essa pesquisa
+            e ai algum responde a requisição, enviando para o servidor originalmente
+            que assim responde ao client  o IP.
+
+       
+        2. Busca interativa
+
+                       www.site.com.br
+       |============| ----------------> |==============|
+       | DNS Client |                   | DNS Server 1 |
+       |============| <---------------- |  11.11.12.1  |
+                         11.11.12.2     |==============|
+                        (referência)
+                         
+        > Ao invés do servidor retornar um endereço ou fazer uma busca 
+            recursiva indo atrás do DNS, ele passa a referência de outro
+            servidor DNS que de fato vai poder atender essa demanda.
+
+            
+                        
+
+       
+
+
+

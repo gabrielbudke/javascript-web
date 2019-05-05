@@ -1,8 +1,0 @@
-> Framework
-    Ajuda a estruturar sua aplicação.
-    Você constroi sua aplicação em cima dele.
-
-Exemplos de frameworks:
-    - Express js
-    - Sails js
-    - Koa js

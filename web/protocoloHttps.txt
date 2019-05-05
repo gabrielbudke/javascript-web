@@ -1,0 +1,37 @@
+Protocolo HTTPS
+    
+    > S vem de seguro
+    
+    > Essa segurança é feita em cima de um protocolo que criptografa
+      os dados apartir de um certificado.
+
+
+    HTTP + TLS (Transport Layer Security Protocol) - SSLv4
+    HTTP + SSL (Secure Sockets Layer Protocol)
+
+
+    Certificado é diferente de Protocolo
+
+    > Os dados são criptografados usando os protocolos TLS ou SSL
+       Um dos grandes objetivos de se ter o HTTPSeguro, é exatamente você garantir 
+       que a informação que sai da sua máquina e vai para o servidor navegando por 
+       várias redes, não seja descriptografada por ninguém.
+
+
+    > Protege contra intercepção (MITM)
+        Famoso ataqui Homem no Meio (Man in the middle).
+
+    > Criptografa todas as informações: URL, cookies e headers
+
+    > Usa certificados digitais
+
+
+    Autoridades Certificadoras (CA)
+        > Emite e valida os certificados.
+        > Emite certificados que vão para sua máquina para que você possa instalar
+           e habilitar o HTTPS.
+        > No browser esses certificados também precisam estar instalados pra que tanto 
+          na hora que for criptografar o dado saindo do servidor para o browser, ele consiga
+           descriptografar no browser assim como vice-versa.
+
+        > 

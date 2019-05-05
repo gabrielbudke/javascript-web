@@ -35,7 +35,7 @@ Servidor DNS:
             que assim responde ao client  o IP.
 
        
-        2. Busca interativa
+        2. Busca iterativa
 
                        www.site.com.br
        |============| ----------------> |==============|
@@ -48,7 +48,14 @@ Servidor DNS:
             recursiva indo atrás do DNS, ele passa a referência de outro
             servidor DNS que de fato vai poder atender essa demanda.
 
-            
+    
+    DNS Records
+    
+        > A - IPv4 
+        > AAAA - IPv6
+        > MX - Servidor de Email
+        > NS - Servidor DNS
+        > CNAME - Canonical Name (Apelido)          
                         
 
        

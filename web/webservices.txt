@@ -1,0 +1,51 @@
+O que é webservice? 
+    > É um serviço web. Tem um serviço que é 
+    disponibilizado em cima de tecnologias da 
+    web. Uso de comunicação baseado em texto.
+
+    > Serviço que roda em cima de tecnologias 
+    da web, e que normalmente essa comunicação
+    são tráfegados de forma textual.
+
+    > Seja apartir de: XML, JSON ou TXT.
+
+    Existem duas grandes alternativas para se 
+    trabalhar com webservice:
+
+        > SOAP (Simple Object Acess Protocol)
+           
+            - WSDL: significa WebService Description Language.
+            É um XMl que descreve quais são as funcionalidades
+            de determinado serviço, os métodos, como é os dados
+            que esse serviço disponibiliza
+
+            - É muito mais burocrático de se usar
+
+            - É baseado em XML, tanto na requisição como na resposta.
+
+            - RPC (Remote Procedure Call): invocação de procedimentos remotos.
+            A partir de um cliente você consegue executar ou invocar uma função
+            que está remota apartir de um protocolo SOAP. 
+
+
+        > REST (Representational State Transfer)
+
+            - Utiliza JSON, HTTP puro. VOcê faz uma requisição
+            para um endpoint (URL), e essa URL dependendo do 
+            tipo do verbo do HTTP, se é um POST, PUT ou GET 
+            ele vai ter um significado.
+
+
+
+    Escolhas Arquiteturais:
+        SOA e Micro Service
+
+        > SOA:
+            Uma arquitetura baseada em serviços que são instalados dentro de um
+            ESB(Entrepise Service Bus) é um barramento. Dentro desse barramento 
+            você instala seus serviços, e esses serviços orquestrados/lógica usar 
+            diversos serviços.
+
+        > Micro Service: 
+            É pegar uma apliação maior e quebrar ela em pequenos módulos autocontidos
+            que se tem um ciclo de vida completo.  

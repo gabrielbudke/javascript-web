@@ -30,7 +30,7 @@ O que é webservice?
 
         > REST (Representational State Transfer)
 
-            - Utiliza JSON, HTTP puro. VOcê faz uma requisição
+            - Utiliza JSON, HTTP puro. Você faz uma requisição
             para um endpoint (URL), e essa URL dependendo do 
             tipo do verbo do HTTP, se é um POST, PUT ou GET 
             ele vai ter um significado.

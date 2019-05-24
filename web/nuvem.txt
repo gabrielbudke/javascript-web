@@ -1,0 +1,10 @@
+A computação em nuvem tem ideia de pagar pelo seu uso.
+
+>   Consegue-se adequar a infraestrutura do sistema para que ela
+    possa fazer o escalonamento automatico (auto-escaling). Vai
+    esticando, aumentano e diminuindo a infraestrutura de acordo
+    com a demanda.  
+
+>   Classificações:
+        Nuvens de infraestrutura (IaaS)
+

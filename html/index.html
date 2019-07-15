@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicios HTML</title>
+</head>
+<body>
+    <header>
+       <h1>Exercicio HTML</h1>
+    </header>
+    <nav>
+        <a href="exercicios/teste.html">00 - Teste</a>
+        <a href="exercicios/temp.html">01 - Temp</a>
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        <br>
+        Curso de Web Moderno
+    </footer>
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            // Pega pelo valor pelo 'id'
+            const conteudo = document.getElementById('conteudo');
+            
+            link.onclick = function(e) {
+                // Prevenir que o comportamento padão ocorra
+                e.preventDefault();
+                // Faz a requisiçao ajax
+                fetch(link.href)
+                    // Pega o conteúdo da página que foi feita a requisição
+                    .then(resp => resp.text()) 
+                    .then(html => conteudo.innerHTML = html);
+
+           }
+        })
+        
+    </script>
+</body>
+</html>

@@ -17,28 +17,29 @@
        <h1>Exercicio HTML</h1>
     </header>
     <nav>
-        <a href="exercicios/teste.html">00 - Teste</a> |
-        <a href="exercicios/texto1.html">01 - Texto 1</a> |
-        <a href="exercicios/texto2.html">02 - Texto 2</a> |
+        <!-- Usando tags personalizadas -->
+        <a href wm-nav="exercicios/teste.html">00 - Teste</a> |
+        <a href wm-nav="exercicios/texto1.html">01 - Texto 1</a> |
+        <a href wm-nav="exercicios/texto2.html">02 - Texto 2</a> |
     </nav>
     <section id="conteudo"></section>
     <footer>
         Curso de Web Moderno
     </footer>
     <script>
-        document.querySelectorAll('a').forEach(link => {
+        document.querySelectorAll('[wm-nav]').forEach(link => {
             // Pega pelo valor pelo 'id'
             const conteudo = document.getElementById('conteudo');
             
             link.onclick = function(e) {
-                // Prevenir que o comportamento padão ocorra
+                // Prevenir que o comportamento pradão de navegar de página ocorra
                 e.preventDefault();
-                // Faz a requisiçao ajax
-                fetch(link.href)
+                // Faz a requisiçao ajax em cima da url do link
+                fetch(link.getAttribute('wm-nav'))
                     // Pega o conteúdo da página que foi feita a requisição
                     .then(resp => resp.text()) 
+                    // Substitui o conteudo da section com o html
                     .then(html => conteudo.innerHTML = html);
-
            }
         })
         

@@ -1,0 +1,47 @@
+<h1>Fomulário</h1>
+
+<form action="http://localhost:3003/usuarios" method="POST">
+  <input type="text" name="name">
+  <input type="password" autocomplete="off" name="password">
+  <textarea name="bio" cols="30" rows="10"></textarea>
+  <div>
+    <input type="radio" name="tipo" value="admin"> Admin
+    <input type="radio" name="tipo" value="regular"> Regular
+  </div>
+  <div>
+    <input type="checkbox" name="ativo"> Ativo
+  </div>
+
+  <select name="estado">
+    <option value="">-- Selecione o seu estado</option>
+    <option value="pr">Paraná</option>
+    <option value="sc">Santa Catarina</option>
+    <option value="rs">Rio Grande do Sul</option>
+  </select>
+
+  <select name="interesses" multiple size="5">
+    <option value="js">Javascript</option>
+    <option value="node">node</option>
+    <option value="react">react</option>
+    <option value="angular">angular</option>
+    <option value="java">java</option>
+    <option value="python">python</option>
+  </select>
+
+
+  <button type="submit">Incluir</button>
+</form>
+
+
+<style> 
+input, textarea, select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type=radio], input[type=checkbox] {
+  display: inline;
+}
+
+
+</style>

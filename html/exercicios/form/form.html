@@ -1,6 +1,7 @@
 <h1>Fomulário</h1>
 
-<form action="http://localhost:3003/usuarios" method="POST">
+<form method="POST">
+  <input type="hidden" name="id" value="3">
   <input type="text" name="name">
   <input type="password" autocomplete="off" name="password">
   <textarea name="bio" cols="30" rows="10"></textarea>
@@ -19,17 +20,19 @@
     <option value="rs">Rio Grande do Sul</option>
   </select>
 
-  <select name="interesses" multiple size="5">
+  <select name="interesses" multiple size="6">
     <option value="js">Javascript</option>
-    <option value="node">node</option>
-    <option value="react">react</option>
-    <option value="angular">angular</option>
-    <option value="java">java</option>
-    <option value="python">python</option>
+    <option value="node">Node</option>
+    <option value="react">React</option>
+    <option value="angular">Angular</option>
+    <option value="java">Java</option>
+    <option value="python">Python</option>
   </select>
 
 
-  <button type="submit">Incluir</button>
+  <button formaction="http://localhost:3003/usuarios">Incluir</butto formn form>
+  <button formaction="http://localhost:3003/usuarios/3">Alterar</buttonformaction="http://localhost:3003/usuarios">
+
 </form>
 
 
@@ -41,6 +44,10 @@ input, textarea, select {
 
 input[type=radio], input[type=checkbox] {
   display: inline;
+}
+
+button {
+  margin-right: 10px;
 }
 
 

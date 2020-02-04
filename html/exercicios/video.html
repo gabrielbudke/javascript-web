@@ -27,6 +27,10 @@
     color: #FFF;
   }
 
+  button:hover {
+    background: #c95959;
+  }
+
   .progresso {
     height: 20px;
     width: 500px;
@@ -57,6 +61,8 @@
   const pauseButton = document.querySelector('[wm-pause]');
   const progressBar = document.querySelector('.progresso div');
 
+  myVideo.oncontextmenu = () => false;
+
   meuVideo.oncanplay = function() {
 
     const duration = myVideo.duration;
@@ -67,9 +73,10 @@
 
     // Controlar o crescimento da progress bar
     myVideo.ontimeupdate = () => {
-      // progressBar.style.width = `${i+=5}px`
-      progressBar.style.width = `${(500 * myVideo.currentTime)/duration}px`
-      //console.log(i+=10);
+      // progressBar.style.width = `${(500 * myVideo.currentTime)/duration}px`
+      const percentual = (myVideo.currentTime/duration) * 100;
+      progressBar.style.width = `${percentual}%`;
+      progressBar.innerHTML = `${percentual.toFixed(1)}`;
     }
   }
 
